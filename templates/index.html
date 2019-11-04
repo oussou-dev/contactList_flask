@@ -17,7 +17,15 @@
         <td>{{contact.prenom}}</td>
         <td>{{contact.tel}}</td>
         <td>{{contact.mail}}</td>
+        <td>
+            <a href="/update/{{loop.index}}"> Edit<a/>
+            <a href="/delete/{{loop.index}}"> Delete<a/>
+        </td>
     </tr>
     {% endfor %}
 </table>
+
+<a href="./create">Add contact</a>
+
+
 {% endblock %}
